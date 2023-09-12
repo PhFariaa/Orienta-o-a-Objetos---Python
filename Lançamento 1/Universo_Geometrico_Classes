@@ -1,0 +1,66 @@
+class Ponto():
+	funcao_construtora(x, y):
+		coordenada_x = x
+		coordenada_y = y
+	distancia_entre_pontos(x, y):
+		return sqrt((coordenada_x - x) * (coordenada_x - x) + (coordenada_y - y) * (coordenada_y - y))
+
+class Circulo():
+	funcao_construtora(raio):
+		raio_circulo = raio
+	
+	area():
+		return	3.14*(raio_circulo*raio_circulo)
+
+	circunferencia():
+		return 2*3.14*raio_circulo0
+
+class Quadrado():
+	funcao_construtora(lado):
+		lado_quadrado = lado
+	
+	area():
+		return lado_quadrado*lado_quadrado
+	perimetro():
+		return lado_quadrado*4
+	diagonal()
+		return lado_quadrado*1.41
+
+class Retangulo():
+	funcao_construtora(base, altura)
+		base_retangulo = base
+		altura_reangulo = altura
+
+	area():
+		return base_retangulo*altura_retangulo
+	perimetro()
+		return (2*base_retangulo + 2*altura_retangulo)
+	diagonal():
+		return sqrt((base_retangulo*base_retangulo) + (altura_retangulo*altura_retangulo))
+
+class Triangulo_equilatero():
+	funcao_construtora(lado):
+		lado_triangulo = lado
+	area():
+		return ((lado_triangulo*lado_triangulo)*1,7)/4
+	altura():
+		return (lado_triangulo*1,7)/2
+	perimetro():
+		return lado_triangulo*3
+
+class Trapezio():
+	funcao_construtora(baseMaior, baseMenor, altura, L1, L2)
+		trapezio_base_maior = baseMaior
+		trapezio_base_menor = baseMenor
+		trapezio_altura = altura
+		trapezio_lado1 = L1
+		trapezio_lado2 = L2
+	area():
+		return ((trapezio_base_maior + trapezio_base_menor) * trapezio_altura)/2
+	perimetro():
+		return (trapezio_base_maior + trapezio_base_menor + trapezio_lado1 + trapezio_lado2)	
+	BaseMedia():
+		return (trapezio_base_maior + trapezio_base_menor)/2
+	Mediana()
+		return (trapezio_base_maior - trapezio_base_menor)/2
+	
