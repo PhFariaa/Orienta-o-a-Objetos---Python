@@ -1,0 +1,69 @@
+importar UniversoGeometricoClasses
+
+print("---- lista de figuras ----
+	1 - Ponto
+	2 - Circulo
+	3 - Quadrado
+	4 - Retangulo
+	5 - Triangulo Equilatero
+	6 - Trapezio
+	7 - Sair")
+
+print("Selecione uma figura")
+leia (numero_figura)
+
+se(numero_figura == 1):
+
+	print("forneca a coordenada do ponto:")
+	leia(x1, y1)
+	ponto = UniversoGeometricoClasses.Ponto(x1, y1)
+	print("forneca a coordenada de outro ponto:")
+	leia(x2, y2)
+	print(ponto.distancia_entre_pontos(x2, y2))
+
+senão se(numero_figura == 2):
+	
+	print("forneca o raio do circulo: ")
+	leia(raio)
+	circulo = UniversoGeometricoClasses.Circulo(raio)
+	print(circulo.area())
+	print(circulo.circunferencia())
+
+senão se(numero_figura == 3):
+	
+	print("forneca o lado do quadrado:")
+	leia(lado)
+	quadrado = UniversoGeometricoClasses.Quadrado(lado)
+	print(quadrado.area())	
+	print(quadrado.perimetro())
+	print(quadrado.diagonal())
+
+senão se(numero_figura == 4):
+
+	print("forneca a base e a altura do retangulo: ")
+	leia(base, altura)
+	retangulo = UniversoGeometricoClasses.Retangulo(base, altura)
+	print(retangulo.area())
+	print(retangulo.perimetro())
+	print(retangulo.diagonal())
+
+senão se(numero_figura == 5):
+
+	print("forneca o lado do trianguilo equilatero: ")
+	leia(lado)
+	triangulo_equilatero = UniversoGeometricoClasses.TrianguloEquilatero(lado)
+	print(triangulo_equilatero.area())
+	print(trianguilo_equilatero.perimetro())
+	print(trianguilo_equilatero.altura())	
+
+senão se(numero_figura == 6):
+	print("forneca a base maior, a base menor, a altura e os lados obliquos do trapezio: ")
+	leia(baseMaior, baseMenor, altura, L1, L2)
+	trapezio = UniversoGeometricoClasses.Trapezio(baseMaior, baseMenor, altura, L1, L2)
+	print(trapezio.area())
+	print(trapezio.perimetro())	
+	print(trapezio.BaseMedia())
+	print(trapezio.Mediana())
+
+senão
+	print('Programa finalizado')
