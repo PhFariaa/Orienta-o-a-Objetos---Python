@@ -68,3 +68,15 @@ plano_cartesiano.printDetails()
 plano_cartesiano.removeShape(ponto1)
 
 plano_cartesiano.showShapes()
+
+
+
+Linha3 = Shapes2D.Linha(3, 4, 5, 9, 10)
+plano_cartesiano.inserShape(Linha3)
+Linha3.tamanho()
+Linha3.printCoord()
+Linha3.uptadeCoord(6, 7, 12, 15)
+Linha3.tamanho()
+Linha3.printCoord()
+
+ponto1.printCoord()
